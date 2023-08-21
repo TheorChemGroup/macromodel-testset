@@ -4,17 +4,11 @@
 git clone --recurse-submodules https://gitlab.com/knvvv/macromodel-testset.git
 ```
 
-# Checklist before uploading
-
-* Clear directory `./assemble_initial/build_model`
-* Remove chemscripts directories
-
 # Prerequisites
 
 * CSD Python API
 * `pip install pypdb`
-* `chemscripts`. Download via `git clone https://gitlab.com/knvvv/chemscripts.git`
-* Download BuildModel into directory `./assemble_initial/build_model`
+* Download BuildModel into directory `./assemble_initial/build_model` 
 
 # Prepare initial structures
 
