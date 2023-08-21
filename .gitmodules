@@ -1,0 +1,6 @@
+[submodule "randomize_startmolecule/chemscripts"]
+	path = randomize_startmolecule/chemscripts
+	url = https://gitlab.com/knvvv/chemscripts.git
+[submodule "assemble_initial/chemscripts"]
+	path = assemble_initial/chemscripts
+	url = https://gitlab.com/knvvv/chemscripts.git

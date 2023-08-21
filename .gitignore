@@ -1,0 +1,4 @@
+**/__pycache__/
+assemble_initial/build_model/*.exe
+assemble_initial/build_model/*.lic
+assemble_initial/nbo_logs/*.log
