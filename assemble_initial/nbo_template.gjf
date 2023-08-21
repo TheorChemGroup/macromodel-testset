@@ -1,0 +1,12 @@
+%nprocs={nproc}
+%mem=60GB
+# 3-21g scrf=(cpcm,solvent=water) empiricaldispersion=gd3bj rpbepbe pop=nboread
+
+Conformation
+
+{chrg} 1
+{xyz}
+
+$NBO $END
+
+

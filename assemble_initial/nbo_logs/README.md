@@ -1,0 +1,1 @@
+Logs of NBO3 calculations in Gaussian are stored here
