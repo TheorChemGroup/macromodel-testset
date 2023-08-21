@@ -1,3 +1,9 @@
+# Clone
+
+```
+git clone --recurse-submodules https://gitlab.com/knvvv/macromodel-testset.git
+```
+
 # Checklist before uploading
 
 * Clear directory `./assemble_initial/build_model`
