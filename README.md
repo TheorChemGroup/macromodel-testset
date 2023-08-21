@@ -105,16 +105,3 @@ python randomize_conf.py
 `python compute_niso.py` - records the number of molecular graph automorphisms for each test molecule and saves as `niso_timings.json`.
 
 `python randomize_conf.py` - randomize conformers using either Ringo or RDKit, optimizes them using RDKit and, finally, performs distance-based topology checks (no NBO this type) that structures are okay.
-
-# Perform confsearch runs
-
-```
-confsearch_execution/
-├── start_conformers/ # Randomized starting conformations. A copy of ../randomize_startmolecule/start_conformers
-├── start_conformers/ # Randomized starting conformations. A copy of ../randomize_startmolecule/start_conformers
-├── chemscripts/ # Utility scripts
-├── *.py # Various driver scripts that are discussed below
-└── niso_timings.json # JSON with numbers of automorphisms
-```
-
-First, we need to create two JSON files, `testcases.json` and `small_testcases.json`, 
