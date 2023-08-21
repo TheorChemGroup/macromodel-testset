@@ -1,16 +1,20 @@
-# Clone
+# MacroModel testset - structure preparation workflow
+
+Original publication of the MacroModel testset - https://doi.org/10.1021/ci5001696
+
+## Clone
 
 ```
 git clone --recurse-submodules https://gitlab.com/knvvv/macromodel-testset.git
 ```
 
-# Prerequisites
+## Prerequisites
 
 * CSD Python API
 * `pip install pypdb`
 * Download BuildModel into directory `./assemble_initial/build_model` 
 
-# Prepare initial structures
+## Prepare initial structures
 
 ```
 cd assemble_initial
@@ -30,7 +34,7 @@ assemble_initial/
 └── nbo_template.gjf # Template for NBO calculations in Gaussian
 ```
 
-## Obtain geometries from databases and sanitize hydrogens
+### Obtain geometries from databases and sanitize hydrogens
 
 The main problem with starting structures is the placement of hydrogen atoms as they are either missing or placed badly to say the least. 
 
@@ -60,7 +64,7 @@ Still, after applying these scripts. Several PDB molecules have some hydrogens t
 * pdb_2GPL.sdf
 * pdb_2IYA.sdf
 
-## Generate topology
+### Generate topology
 
 ```
 python gen_gjf.py
@@ -76,7 +80,7 @@ After setting atomic charges and correcting bond orders we can use RDKit for geo
 
 Check visually that all molecules are fine and move on.
 
-# Build testset of randomized conformers
+## Build testset of randomized conformers
 
 ```
 cd randomize_startmolecule
