@@ -110,6 +110,9 @@ if __name__ == "__main__":
         curline += 1
     
     for sdfname in glob.glob(os.path.join(RES_MOLS, '*.sdf')):
+        if '1PFE' in sdfname:
+            continue
+        print(sdfname)
         suppl = Chem.SDMolSupplier(sdfname)
         mol = suppl[0]
         assert mol is not None
@@ -118,11 +121,9 @@ if __name__ == "__main__":
             f.write(mol)
 
     for pdbfile in glob.glob(os.path.join(RES_MOLS, '*.pdb')):
-        if "pdb_1E9W" not in pdbfile and "pdb_2VYP" not in pdbfile:
+        if '1MRL' not in pdbfile:
             continue
         molname = os.path.join(RES_MOLS, ntpath.basename(pdbfile).replace('.pdb', '.sdf'))
-        # if os.path.isfile(molname):
-            # continue
         
         molname_temp = apply_buildmodel(pdbfile)
         shutil.move(molname_temp, molname)
